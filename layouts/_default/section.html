@@ -1,0 +1,45 @@
+{{ define "main" }}
+
+<div id="main">
+
+            <!-- Post -->
+              <section class="post">
+                <header class="major">
+          {{ if (isset .Params "title") }} 
+          <h1>{{ .Params.title }}</h1>
+          {{ end }}
+
+          {{ if (isset .Params "summary") }} 
+          <p>{{ .Params.summary }}</p>
+          {{ end }}
+
+        </header>
+
+
+        {{ if (isset .Params "image") }} 
+        <div class="image main"><img src="{{ .Params.image }}" alt="" /></div>
+        {{ end }}
+
+        <!-- Text stuff -->
+
+        {{ .Content }}
+
+                <!-- Text stuff -->
+                {{ range .Paginator.Pages }}
+
+                <h2>{{.Title}}</h2>
+              
+                  <p><span class="image left"><img src="{{.Params.image}}" alt="" /></span>{{.Params.summary}}</p>
+              <ul class="actions small">
+                    <li><a href="{{.Permalink}}" class="button special small">Read Full Story</a></li>
+                    
+                  </ul>   
+
+                  <hr />
+              {{ end }}
+                
+              </section>
+
+          </div>
+
+{{ end }}

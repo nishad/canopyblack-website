@@ -1,0 +1,12 @@
+baseURL: /
+languageCode: en-us
+title: CanopYBlacK
+copyright: "Copyright {year} CanopYBlacK. All rights reserved."
+
+# docs dir is useful to host in GitHub. 
+# Select docs as the source of site from settings.
+publishDir: docs
+
+# Set this to false is recommended
+relativeURLs: true
+disableKinds: ["taxonomy", "taxonomyTerm"]

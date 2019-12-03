@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	{{ partial "common/head.html" . }}
+</head>
+<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+				<div id="intro">
+                <h1>This is<br />
+						CANOPY BLACK</h1>
+						<p>CanopyBlack is a media company, located in Kalpetta, Kerala State, India. The company produces visual contents of varied categories including Documentaries, Music Videos and New Media content</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+						<!--Video Section-->
+ <section class="home-section home-full-height bg-dark-30" id="home" data-background="/assets/images/section-5.jpg">
+        <div class="video-background">
+    <div class="video-foreground">
+      <iframe src="https://www.youtube.com/embed/blCMtotjRrk?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ" frameborder="0" allowfullscreen></iframe>
+     
+    </div>
+  </div>
+        
+       
+         
+      </section>
+<!--Video Section Ends Here-->
+					</div>
+
+
+				<!-- Header -->
+					<header id="header">
+						<a href="/" class="logo">CanopYBlacK</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						{{ partial "common/menu.html" . }}
+						<ul class="icons">
+							<li><img src="/images/logo.png"> </li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						{{ with .Site.GetPage .Params.hero }}
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									
+									<h2><a href="{{.Permalink}}">{{ .Params.title }}<br />
+									</a></h2>
+									<p>{{ .Params.summary }}</p>
+								</header>
+								<a href="{{.Permalink}}" class="image main"><img src="{{ .Params.image }}" alt="" /></a>
+								<ul class="actions">
+									<li><a href="{{.Permalink}}" class="button big">Full Story</a></li>
+								</ul>
+							</article>
+
+						{{end}}
+
+						<!-- Posts -->
+							<section class="posts">
+							{{ with .Site.GetPage .Params.left }}
+								<article>
+									<header>
+										
+										<h2><a href="{{.Permalink}}">{{ .Params.title }}</a></h2>
+									</header>
+									<a href="{{.Permalink}}" class="image fit"><img src="{{ .Params.image }}" alt="" /></a>
+									<p>{{ .Params.summary }}</p>
+									<ul class="actions">
+										<li><a href="{{.Permalink}}" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								{{end}}
+
+								{{ with .Site.GetPage .Params.right }}
+								<article>
+									<header>
+										
+										<h2><a href="{{.Permalink}}">{{ .Params.title }}</a></h2>
+									</header>
+									<a href="{{.Permalink}}" class="image fit"><img src="{{ .Params.image }}" alt="" /></a>
+									<p>{{ .Params.summary }}</p>
+									<ul class="actions">
+										<li><a href="{{.Permalink}}" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								
+								
+								{{end}}
+								
+							</section>
+
+						<!-- Footer -->
+							
+
+					</div>
+
+				<!-- Footer -->
+				{{ partial "footer/footer.html" . }}	
+
+				<!-- Copyright -->
+				{{ partial "footer/copyright.html" . }}
+				
+			</div>
+
+		<!-- Scripts -->
+		{{ partial "common/scripts.html" . }}
+
+	</body>
+</html>

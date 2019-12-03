@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	{{ partial "common/head.html" . }}
+</head>
+<body class="is-loading">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<a href="/" class="logo">CanopYBlacK</a>
+		</header>
+
+		<!-- Nav -->
+		<nav id="nav">
+			{{ partial "common/menu.html" . }}
+			<ul class="icons">
+				<li><img src="/images/logo.png"> </li>
+			</ul>
+		</nav>
+		{{ block "main" . }}
+		<!-- Main -->
+		<div id="main">
+			<!-- Post -->
+			<section class="post">
+				<header class="major">
+					{{ if (isset .Params "title") }} 
+					<h1>{{ .Params.title }}</h1>
+					{{ end }}
+
+					{{ if (isset .Params "summary") }} 
+					<p>{{ .Params.summary }}</p>
+					{{ end }}
+
+				</header>
+
+
+				{{ if (isset .Params "image") }} 
+				<div class="image main"><img src="{{ .Params.image }}" alt="" /></div>
+				{{ end }}
+
+				<!-- Text stuff -->
+
+				{{ .Content }}
+			</section>
+
+		</div>
+		{{ end }}
+
+			<!-- Footer -->
+
+
+		</div>
+
+		<!-- Footer -->
+		{{ partial "footer/footer.html" . }}	
+
+		<!-- Copyright -->
+		{{ partial "footer/copyright.html" . }}
+
+	</div>
+
+	<!-- Scripts -->
+	{{ partial "common/scripts.html" . }}
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CanopYBlacK</title>
+    <link>/</link>
+    <description>Recent content on CanopYBlacK</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright {year} CanopYBlacK. All rights reserved.</copyright>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Slave Genesis</title>
+      <link>/works/the-slave-genesis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/works/the-slave-genesis/</guid>
+      <description>The documentary ‘The Slave Genesis’ deals with the social transformation of Paniya tribals, who belong to South India’s hill district of Wayanad. ‘Paniya’ literally translates to ‘worker’.</description>
+    </item>
+    
+    <item>
+      <title>Vithappadu - Sowing Field</title>
+      <link>/works/vithappadu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/works/vithappadu/</guid>
+      <description>vithappadu’ (Sowing Field) provides an insight to the issues of food sovereignty, sustainable management of traditional rice farming system and the adaptive strategy of reorganization of the social structure of traditional agricultural system.</description>
+    </item>
+    
+    <item>
+      <title>Frogs in Wayanad</title>
+      <link>/works/frogs-in-wayanad/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/works/frogs-in-wayanad/</guid>
+      <description>Frogs in Wayanad is a process documentation of ecological measurement, shows paddy wetlands to be multifunctional ecosystems which in addition to producing food.</description>
+    </item>
+    
+    <item>
+      <title>About CanopyBlack</title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>CanopyBlack is a media company, located in Kalpetta, Kerala State, India. The company produces visual contents of varied categories including Documentaries, Music Videos and New Media content. Since its formal inception in 2007, the company successfully collaborated with various Governmental and Non-governmental Organizations in producing films of specific form. It ranges from the technical video documentation of scientific expeditions at Research Organizations to Music Videos in promotion of the government led Vaccination Campaigns.</description>
+    </item>
+    
+    <item>
+      <title>Achievements of canopyblack</title>
+      <link>/achievements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/achievements/</guid>
+      <description>CanopyBlack started producing films-both fiction and documentaries since 2007 and then showed the pace. The first commendable one was the docu-fiction entitled ‘Vizhithezhuthal (‘The Awakening’) funded by Department of Scientific and Industrial Research, Govt. of India through M S Swaminathan Research Foundation, Chennai, India in 2007. In 2008, a 25-minute documentary entitled ‘Reclaimed Outlets’ is produced for the same organization, which conceived on the principles of food sovereignty through the practices of the tribal communities in the Western Ghat Range of Wayanad district in Kerala.</description>
+    </item>
+    
+  </channel>
+</rss>

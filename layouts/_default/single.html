@@ -1,0 +1,28 @@
+		{{ define "main" }}
+		<!-- Main -->
+		<div id="main">
+			<!-- Post -->
+			<section class="post">
+				<header class="major">
+					{{ if (isset .Params "title") }} 
+					<h1>{{ .Params.title }}</h1>
+					{{ end }}
+
+					{{ if (isset .Params "summary") }} 
+					<p>{{ .Params.summary }}</p>
+					{{ end }}
+
+				</header>
+
+
+				{{ if (isset .Params "image") }} 
+				<div class="image main"><img src="{{ .Params.image }}" alt="" /></div>
+				{{ end }}
+
+				<!-- Text stuff -->
+
+				{{ .Content }}
+			</section>
+
+		</div>
+		{{ end }}
